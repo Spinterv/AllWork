@@ -1,0 +1,234 @@
+
+/*РАСКОММЕНТИТЬ 22-24 47-81 СТРОЧКИ ДЛЯ ОТОБРАЖЕНИЯ С МОЕЙ ЗАДУМКОЙ*/
+
+
+body{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	min-height: 50vh;
+	vertical-align: middle;
+	font-size: 16px;
+	align-items: center;
+	background-color: grey;
+}
+
+input[],textarea{
+	font-size: 16px;
+	outline: none;
+	margin-bottom: 5px;
+}
+
+/*.vopros1, .vopros2, .vopros3, .vopros4, .vopros5, .vopros6, .vopros7, .vopros8, .vopros9, .individ10 {
+	display: none;
+}*/
+
+div.button{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	display: inline-block;
+	shape-outside: hide;
+}
+
+button{
+	font-size: 16px;
+}
+
+#nazvzad{
+	font-size: 150%;
+	color: greenyellow;
+}
+
+#text35{
+	width: auto;
+	display: inline-block;
+}
+
+/*h1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	font-size: 200%;
+	width: 211.46px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+h1:after{
+    background-color: darkred; 
+    display: block;
+    content: "";
+    height: 2px; 
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+h1:hover:after,
+h1:focus:after {
+    width: 100%;
+}
+
+h1.perv:hover + .vopros1, h1.vtor:hover + .vopros2, h1.tret:hover + .vopros3, h1.chetv:hover + .vopros4, h1.pyat:hover + .vopros5, h1.shest:hover + .vopros6, h1.sem:hover + .vopros7, h1.vosem:hover + .vopros8, h1.devyat:hover + .vopros9, h1.individ:hover + .individ10,
+.vopros1:hover, .vopros2:hover, .vopros3:hover, .vopros4:hover, .vopros5:hover, .vopros6:hover, .vopros7:hover, .vopros8:hover, .vopros9:hover, .individ10:hover
+{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}*/
+
+.yacheyka{
+	background-color: white;
+	height: 30px; width: 30px; display: inline-block;
+    border: 2px solid black; font-size: 20px;
+    vertical-align: middle; margin-bottom: 5px;
+    text-align: center;
+}
+
+
+#parent {
+	margin: 0 auto;
+	width: 400px;
+}
+
+.menu a {
+	margin-right: 5px;
+	display: inline-block;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	border: 1px solid gray;
+}
+.menu a:hover {
+	background: #f8f8f8;
+}
+.menu a.active {
+	border-color: transparent;
+	background: #f2f2f2;
+}
+
+.tabs .tab:not(.active) {
+	display: none;
+}
+.tabs .tab {
+	padding: 10px;
+	background: #f2f2f2;
+	height: 300px;
+}
+
+#mesyac li{
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 24px;
+	color: white;
+}
+
+.segodnya{
+	font-size: 32px;
+	border: 1px solid darkred;
+	background: brown;
+	padding: 5px;
+}
+
+.segodnya9{
+	background: brown;
+}
+
+
+#wrapper {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#menu {
+	width: 150px;
+	position: absolute;
+	right: 105%;
+}
+#notes {
+	padding: 0;
+	margin: 0;
+}
+#notes li {
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 1px dashed gray;
+	list-style-type: none;
+	cursor: pointer;
+}
+#notes li:hover, #notes li.active {
+	background: #f1f1f1;
+}
+
+#notes li.zanyato{
+	border: 3px dashed greenyellow;
+}
+
+#notes li.zanyato:hover{
+	background: linear-gradient(to right, greenyellow, grey);
+}
+#create button {
+	width: 100%;
+	padding: 5px;
+}
+
+#text textarea {
+	width: 100%;
+	height: 400px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#text button {
+	width: 100%;
+	height: 30px;
+}
+
+#parent9 {
+	text-align: center;
+}
+#calendar {
+	display: inline-block;
+}
+#calendar td, #calendar th {
+	padding: 5px 12px;
+	border: 1px solid black;
+	text-align: center;
+}
+#calendar #dni tr{
+	padding: 5px 12px;
+	border: 1px solid black;
+	text-align: center;
+	display: table;
+/*	display: table-caption;*/
+}
+
+#calendar .info {
+	font-size: 32px;
+}
+
+#calendar .nav, #calendar .info {
+	text-align: center;
+}
+#calendar a {
+	color: blue;
+	font-size: 25px;
+	text-decoration: none;
+}
+#calendar a:hover {
+	color: red;
+}
+
+#calendar .active {
+	color: red;
+}
+
+table {
+    font-size: 32px;
+}
