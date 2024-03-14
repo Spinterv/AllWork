@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Общее описание</title>
+    <!-- подключить CSS -->
+     <link rel="stylesheet" href="css/Вторая.css">
+  </head>
+  <body>
+
+    <nav class="menu"> 
+      <ul>
+        <li class="crumb"><a class="text" href="Третья.html">Примеры</a></li>
+        <li class="crumb"><a class="text" href="Четвертая.html">Решения</a></li>
+        <li class="crumb"><a class="text" href="Первая.html">Главная</a></li>
+        <li class="crumb glava"> Общее описание</li>
+      </ul>
+    </nav>
+
+    <header>
+      <p id="gradient" class="zagolovok">
+        Метод градиентного спуска.
+      </p>
+    </header>
+
+    <section>
+      <div class="perviy">
+        <div class="abzac">
+          <p>
+            Одним из самых распространённых методов минимизации, связанных с вычислением градиента, является метод спуска по направлению антиградиента минимизируемой функции. В пользу такого выбора направления спуска можно привести следующие оображения. Поскольку антиградиент, то есть j’(xk) в точке xk указывает направление наискорейшего убывания функции, то естественным представляется сместиться из точки xk по этому направлению.
+            Метод спуска, в котором Sk=j’(xk), называется методом градиентного спуска.
+          </p>
+          <p>
+            Величина bk в методе градиентного спуска традиционно вычисляется путём применения одного из методов одномерной минимизации функции y(b)=j(xk-bj’(xk)), что не исключает применение и других способов отыскания bk.
+          </p>
+          <p>
+            Если в качестве bk выбирают точку одномерного минимума функции y(b)=j(xk-bSk) релаксационный процесс называется методом наискорейшего спуска: xk+1=xk-bkj’(xk), bk=arg min {y(b)=j(xk-bSk) | b³0}.
+          </p>
+        </div>
+        <div class="pokoordinatimg">
+            <img src="Photo/градиент.png">
+            <p class="podpis">
+              Метод градиентного спуска
+            </p>
+          </div>
+      </div>
+
+      <header>
+        <p id="coordinati" class="zagolovok">
+          Метод покоординатного спуска.
+        </p>
+      </header>
+    
+      <div class="vtoroy">
+        <div class="abzac">
+          <p>
+            Одним из наиболее простых способов определения направления спуска является выбор в качестве Sk одного из координатных векторов ±e1, ±e2, …, ±en, вследствие чего у xk на каждой итерации изменяется лишь одна из компонент.
+          </p>
+          <p>
+            Существуют многочисленные варианты покоординатного спуска. Но в любом из этих методов выбирают в качестве -Sk то из двух направлений, +ej, -ej, которому соответствует неравенство
+          </p>
+          <p class="formula">
+            [j’(xk), Sk] > 0.</p>
+          <p>
+            В случае, если xk+1=xk и переходят к следующей итерации.
+          </p>
+          <p>
+            Опишем первый цикл метода, состоящий из n итераций. В произвольной точке x0 выбирают S0=±e, и определяет величину b0 способом удвоения так, чтобы было j(x1)=j(x0-b0S0)0). Затем выбирают S1=±e2 и, полагая b=b0, удвоением вычисляют b1 и так далее. При этом на каждой итерации стремятся определение величины шага методом удвоения осуществлять с наименьшим числом вычислений значений функции j(х). Цикл заканчивается при k=n-1, после чего начинают следующий цикл, полагая Sn=±e1 и т.д.
+          </p>
+        </div>
+
+          <div class="pokoordinatimg">
+            <img src="Photo/покоординатный.png">
+            <p class="podpis">
+              Метод<br>покоординатного<br>спуска
+            </p>
+            <img class="vtooroy" src="Photo/покоординатный2.png">
+            <p class="podpis">
+              Метод<br>покоординатного<br>спуска
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <article>
+      <header>
+        <p class="zagolovok">
+          Список литературы.
+        </p>
+      </header>
+
+
+      <nav class="sposobi"> 
+              <ol>
+                <li class="crumb2"><a class="text2" href="https://studizba.com/files/show/pdf/53718-1-n-s-bahvalov-n-p-zhidkov-g-m-kobel-kov-.html">Н.С. Бахвалов, Н.П. Жидков, Г.М. Кобельков - Численные методы;</a></li>
+                <li class="crumb2"><a class="text2" href="https://ikfia.ysn.ru/wp-content/uploads/2018/01/BerezinZhidkov_t1_1962ru.pdf">И.С. Березин, Н.П. Жидков - Методы вычислений Том 1;</a></li>
+                <li class="crumb2"><a class="text2" href="http://ikfia.ysn.ru/wp-content/uploads/2018/01/BerezinZhidkov_t2_1959ru.pdf">И.С. Березин, Н.П. Жидков - Методы вычислений Том 2;</a></li>
+                <li class="crumb2"><a class="text2" href="http://mathscinet.ru/files/VoevodinKuznecov.pdf">В.В. Воеводин, Ю.А. Кузнецов - Матрицы и вычисления;</a></li>
+                <li class="crumb2"><a class="text2" href="https://alexandr4784.narod.ru/nikiforovma.html">А. Ф. Никифоров, В. Б. Уфваров Специальные функции математической физики;</a></li
+              </ol>
+            </nav>
+
+    </article>
+
+    <footer>
+      <p class="footer"> Меня можно найти во 
+      <a class="footer1" href="https://vk.com/gagasha">ВКонтакте</a>
+      <a class="footer" href="https://vk.com/gagasha"><img class="Photo" src="Photo/Cat.png" width="100" height="100"></a></p>
+    </footer>
+
+  </body>
