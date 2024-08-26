@@ -4,8 +4,8 @@ from datetime import datetime, time
 from pyowm.utils.config import get_default_config
 #from goto import with_goto
 
-bot  = telebot.TeleBot("6484853903:AAHVksCoTyrjEYZoJNlOK8p3neeiwwt2__A")
-owm = OWM('ac1198b6350116d6953d51c6caacc8b9')
+bot  = telebot.TeleBot("...")
+owm = OWM('...')
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
